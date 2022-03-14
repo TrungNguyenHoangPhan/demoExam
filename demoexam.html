@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            box-shadow: 2px 1px 5px;
+            padding: 50px;
+        }
+        .header{
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-evenly;
+        }
+        nav.right img{
+            width: 100px;
+            height: 120px;
+            aspect-ratio: 3/4;
+           object-fit: cover;
+           
+            
+        }
+        .header .left a{
+           
+            text-decoration: none;
+            color: black;
+            margin-right:3px;
+            border-right: 1px solid black;
+        }
+        .header .left a:hover{
+            background-color: rgb(107, 235, 107);
+            padding: 10px;
+            border-radius: 20px;
+        } 
+        .img-head{
+            margin: 0 auto;
+            width: 80%;
+        }
+        .img-head img{
+            margin: 0 auto;
+            width: calc(100% - 42px);
+        }
+        .content{
+            display: flex;
+            width: calc(100% - 42px);
+            margin: 0 auto;
+        }
+        .colum{
+            width: calc(100% - 10px);
+            margin-right: 5px;
+        }
+        .title-green{
+            background-color: greenyellow;
+            border-radius: 15px;
+            width: 60%;
+        }
+       .title-green img{
+           width: 20px;
+           padding: 5px ;
+       }
+       .title-green p{
+            padding: 5px;
+       }
+       .orange{
+           color: orange;
+           font-weight: bold;
+       }
+       .img-word{
+           display: flex;
+       }
+       .img-word img{
+           width: 80px;
+           height: 80px;
+           margin-right: 5px;
+       }
+       .font-bolder{
+        font-weight: bold;
+       }
+       .back-green{
+           display: flex;
+           flex-wrap: wrap;
+           margin: 10px auto;
+       }
+       .orange1{
+           color: orange;
+           
+       }
+       .colum .p-green::before{
+           content: "+";
+
+       }
+       .colum .p-green{
+           background-color: greenyellow;
+           font-weight:bold ;
+           margin-left: 35px;
+       }
+      
+       hr{
+          width: 90%;
+          
+       }
+       footer {
+        display: flex;
+        border-bottom: 3px solid black;
+        justify-content: space-around;
+       }
+       footer .foot-right{
+           text-align: left;
+           margin-bottom: 10px;
+       }
+       footer .foot-img img{
+           width: 100px;
+           height: 120px;
+           object-fit: cover;
+       }
+       @media screen and (max-width:900px) {
+           .container{
+               width: calc(100% - px);
+           }
+       }
+       @media screen and (max-width:480px) {
+           .container{
+               width: calc(100% - -100px);
+           }
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav class="right">
+                <img src="images/tải xuống (1).jpg">
+            </nav>
+            <nav class="left">
+                <a href="#" class="border-right">THỰC PHẨM AN TOÀN </a>
+                <a href="#" class="border-right">CHỌN MUA THỰC PHẨM</a>
+                <a href="#" class="border-right">CÁCH CHẾ BIẾN</a>
+                <a href="#" class="border-right">KIẾN THỨC</a>
+                <a href="#" class="border-right">LIÊN HỆ</a>
+            </nav>
+        </div>
+        <div class="img-head">
+            <img src="images/lich-thi-dau-chung-ket-the-gioi-lien-minh-huyen-thoai-thumb-800x450-1.jpg">
+        </div>
+        <div class="content">
+            <div class="colum">
+                <div class="title-green">
+                   <h3><img src="images/logo-ggplus.png" alt="">
+                    CẨM NANG SỨC KHỎE</h3>
+                </div>
+                <p class="orange"> 7 điều cần tránh sau bữa ăn</p>
+                <div class="img-word">
+                    <img src="images/logo-facebook.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consecti vitae omnis possimus cumque iste mollitia.</p>
+                    </div>
+                    <ul class="font-bolder"style="border-bottom:1px solid black ; padding-bottom: 10px;">
+                        <li>Thực phẩm hàng ngày</li>
+                        <li>Bí kíp để có giấc ngủ ngon</li>
+                        <li>Thực phẩm cho người tiểu đường</li>
+                    </ul>
+                
+                <div class="title-green">
+                    <h3><img src="images/logo-ggplus.png">
+                    CHẾ BIẾN THỰC PHẨM</h3>
+                </div>
+                <p class="orange">Khéo chọn và chế biến thịt bò</p>
+                <div class="img-word">
+                    <img src="images/logo-facebook.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consecvitae omnis possimus cumque iste mollitia.</p>
+                    </div>
+                    <ul class="font-bolder">
+                        <li>Nguyên tắc chế biến thực phẩm</li>
+                        <li>Mẹo phân biệt thịt bò và thịt trâu</li>
+                        <li>Cách chế biến thịt bò</li>
+                    </ul>
+                
+            </div>
+            <div class="colum">
+                <img src="images/tải xuống (1).jpg" class="colum2-img">
+                <div class="back-green"  style="border-bottom:1px solid black ; padding-bottom: 10px;">
+                    <span style="background-color: greenyellow; width: 32%;">BỆNH ĐƯỜNG</span> 
+                    <div class="orange1">
+                        Lý do bạn nên ăn nhiều bữa
+                    </div>
+                </div>
+                <img src="images/tải xuống (1).jpg" class="colum2-img">
+                <div class="back-green">
+                    <span style="background-color: greenyellow; width: 55%;">KIẾN THỨC THỰC PHẨM</span>
+                    <div class="orange1">
+                        Kinh doanh thực phẩm sạch, làm đúng đạo đức.
+                    </div>
+                </div>
+            </div>
+            <div class="colum">
+                <div class="title-green">
+                    <h3><img src="images/logo-ggplus.png" alt="">
+                        CHUYÊN MỤC THỰC PHẨM</h3>
+                </div>
+                    <p class="p-green">Bí quyết chọn cá tươi</p>
+                    <p class="p-green">Chế biến thực phẩm an toàn</p>
+                    <p class="p-green">Tư vấn chọn mua sản phẩm</p>
+                <div class="title-green">
+                    <h3><img src="images/logo-ggplus.png" alt="">
+                        CHUYÊN MỤC CHẾ BIẾN</h3>
+                </div>
+                    <p class="p-green">Cẩm nang vào bếp</p>
+                    <p class="p-green">Cách làm canh chua</p>
+                    <p class="p-green">Món ngon cuối tuần</p>
+                <div class="title-green">
+                    <h3><img src="images/logo-ggplus.png" alt="">
+                        CHUYÊN MỤC KIẾN THỨC</h3>
+                </div>
+                    <p class="p-green">Kiến thức bảo quản thực phẩm</p>
+                    <p class="p-green">Bảo quản thực phẩm tự nhiên</p>
+                    <p class="p-green">Các loại ngũ cốc giàu đạm</p>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <div class="foot-img">
+                <img src="images/tải xuống (1).jpg" alt="">
+            </div>
+            <div class="foot-left">
+                <div>&copy;Copyright Bộ khoa học & Công nghệ <br>
+                Bản quyền thuộc về Chất lượng Việt Nam <br>
+            Giấy phép hoạt động báo chí điện tử số: 776GP - BITTT ngày 08/05/2016</div> 
+            </div>
+            <div class="foot-right">
+                Địa chỉ Số 38 Yên Bái, Hải Châu, Đà Nẵng <br>
+                Liên hệ: Tel.0936.389.896 <br>
+                Email: noname@softtech.com <br>
+                Giới thiệu | Liên hệ
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
